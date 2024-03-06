@@ -1,3 +1,13 @@
+**自用，基于 Stack 主题微调。**
+
+调整内容：
+
+* `layouts/partials/comments/provider/twikoo.html` - 更换 twikoo CDN 地址。
+* `layouts/partials/head/custom.html` - 新增 Cloudflare Web Analytics。
+* `layouts/partials/head/head.html` - 优化标题显示。
+
+------
+
 ![image](https://user-images.githubusercontent.com/5889006/190859441-141b5f81-8483-40d2-bd96-ebf85616a46d.png)
 
 # Hugo Theme Stack

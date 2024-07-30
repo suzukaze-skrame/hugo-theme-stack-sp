@@ -5,3 +5,13 @@
         {{end}}
     {{end}}
 {{end}}
+
+{{with .Site.Params.webAnalytics.umami}}
+    {{if .enabled}}
+        {{if .url}}
+            {{if .id}}
+            <script defer src="{{ .url }}" data-website-id="{{ .id }}"></script>
+            {{end}}
+        {{end}}
+    {{end}}
+{{end}}

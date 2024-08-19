@@ -33,6 +33,9 @@
 
     {{ $title = $title | append " - " $siteTitle }}
     {{ $title = delimit $title "" }}
+{{- else if eq .Kind "page" -}}
+    <!-- Default page -->
+    {{ $title = printf "%s - %s" $title $siteTitle }}
 {{- end -}}
 
 {{ return $title }}

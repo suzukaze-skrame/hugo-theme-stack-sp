@@ -3,8 +3,8 @@
 调整内容：
 
 * `layouts/partials/comments/provider/twikoo.html` - 更换 twikoo CDN 地址。
+* `layouts/partials/data/title.html` - 优化页面标题显示。
 * `layouts/partials/head/custom.html` - 新增 Cloudflare Web Analytics、Umami。
-* `layouts/partials/head/head.html` - 优化标题显示。
 
 ------
 

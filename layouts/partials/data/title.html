@@ -17,7 +17,7 @@
         {{ $title = $siteTitle}}
     {{ end }}
 {{- else if eq .Kind "term" -}}
-    <!-- Taxonomy page -->
+    <!-- Term page -->
 
     <!-- Build paginator -->
     {{ $notHidden := where .Pages "Params.hidden" "!=" true }}
@@ -35,6 +35,12 @@
     {{ $title = delimit $title "" }}
 {{- else if eq .Kind "page" -}}
     <!-- Default page -->
+    {{ $title = printf "%s - %s" $title $siteTitle }}
+{{- else if eq .Kind "section" -}}
+    <!-- Section page -->
+    {{ $title = printf "%s - %s" $title $siteTitle }}
+{{- else if eq .Kind "taxonomy" -}}
+    <!-- Taxonomy page -->
     {{ $title = printf "%s - %s" $title $siteTitle }}
 {{- end -}}
 

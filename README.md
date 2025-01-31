@@ -2,10 +2,9 @@
 
 调整内容：
 
-* `layouts/partials/comments/provider/twikoo.html` - 更换 twikoo CDN URL。
 * `layouts/partials/data/title.html` - 优化页面标题显示。
 
-------
+---
 
 ![image](https://user-images.githubusercontent.com/5889006/190859441-141b5f81-8483-40d2-bd96-ebf85616a46d.png)
 
